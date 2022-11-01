@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "71f02a37-bcfe-4d18-b49b-e37dd3bc170d",
+		"name": "Study Ports And Adapters",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Demand",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerId\": \"S0M3-CU$T0M3R\",\n  \"reason\": \"A want to create one demand to test my solution\",\n  \"propertyId\": \"L!ST-C0D3\",\n  \"url\": \"http://someurl.com.br/xpto\",\n  \"origin\": \"KNOW_MORE_DETAILS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/demand",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"demand"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
